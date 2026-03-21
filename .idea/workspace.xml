@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="70aadfd0-945d-4bd0-8a10-f83af9322903" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CROSS_PLATFORM_TESTING_GUIDE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLATFORM_DIFFERENCES.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TROUBLESHOOTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/USAGE_EXAMPLES.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VIDEO_WALKTHROUGH_SCRIPT.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/thijscreemers/work/tcbv/boundary-starter" value="3BF5n9Ib2WyR7eqkpadkgAF6Pso" />
+    </persistenceIdMap>
+  </component>
+  <component name="DepsProjectDetails">
+    <option name="cachedModuleDetails">
+      <map>
+        <entry key="$PROJECT_DIR$/deps.edn">
+          <value>
+            <ModuleDetails>
+              <option name="details" value="{:basis {:classpath {&quot;/Users/thijscreemers/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar&quot; {:lib-name net.java.dev.jna/jna}, &quot;/Users/thijscreemers/.m2/repository/ring/ring-codec/1.1.1/ring-codec-1.1.1.jar&quot; {:lib-name ring/ring-codec}, &quot;/Users/thijscreemers/.m2/repository/org/clojure/clojure/1.12.3/clojure-1.12.3.jar&quot; {:lib-name org.clojure/clojure}, &quot;/Users/thijscreemers/.m2/repository/org/clojure/core.specs.alpha/0.4.74/core.specs.alpha-0.4.74.jar&quot; {:lib-name org.clojure/core.specs.alpha}, &quot;/Users/thijscreemers/.m2/repository/ring/ring-mock/0.4.0/ring-mock-0.4.0.jar&quot; {:lib-name ring/ring-mock}, &quot;/Users/thijscreemers/.m2/repository/org/clojure/core.rrb-vector/0.1.2/core.rrb-vector-0.1.2.jar&quot; {:lib-name org.clojure/core.rrb-vector}, &quot;/Users/thijscreemers/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.9.6/jackson-dataformat-cbor-2.9.6.jar&quot; {:lib-name com.fasterxml.jackson.dataformat/jackson-dataformat-cbor}, &quot;/Users/thijscreemers/.m2/repository/lambdaisland/kaocha/1.87.1366/kaocha-1.87.1366.jar&quot; {:lib-name lambdaisland/kaocha}, &quot;/Users/thijscreemers/.m2/repository/meta-merge/meta-merge/1.0.0/meta-merge-1.0.0.jar&quot; {:lib-name meta-merge/meta-merge}, &quot;/Users/thijscreemers/.m2/repository/hawk/hawk/0.2.11/hawk-0.2.11.jar&quot; {:lib-name hawk/hawk}, &quot;/Users/thijscreemers/.m2/repository/org/clojure/tools.reader/1.3.6/tools.reader-1.3.6.jar&quot; {:lib-name org.clojure/tools.reader}, &quot;/Users/thijscreemers/.m2/repository/com/nextjournal/beholder/1.0.2/beholder-1.0.2.jar&quot; {:lib-name com.nextjournal/beholder}, &quot;/Users/thijscreemers/.m2/repository/lambdaisland/deep-diff2/2.10.211/deep-diff2-2.10.211.jar&quot; {:lib-name lambdaisland/deep-diff2}, &quot;/Users/thijscreemers/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar&quot; {:lib-name com.h2database/h2}, &quot;/Users/thijscreemers/.m2/repository/org/clojure/spec.alpha/0.5.238/spec.alpha-0.5.238.jar&quot; {:lib-name org.clojure/spec.alpha}, &quot;/Users/thijscreemers/work/tcbv/boundary-starter/resources&quot; {:path-key :paths}, &quot;/Users/thijscreemers/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.6/jackson-core-2.9.6.jar&quot; {:lib-name com.fasterxml.jackson.core/jackson-core}, &quot;/Users/thijscreemers/.m2/repository/tigris/tigris/0.1.1/tigris-0.1.1.jar&quot; {:lib-name tigris/tigris}, &quot;/Users/thijscreemers/.m2/repository/org/clojure/tools.cli/1.0.219/tools.cli-1.0.219.jar&quot; {:lib-name org.clojure/tools.cli}, &quot;/Users/thijscreemers/.m2/repository/org/clojure/java.classpath/1.0.0/java.classpath-1.0.0.jar&quot; {:lib-name org.clojure/java.classpath}, &quot;/Users/thijscreemers/.m2/repository/lambdaisland/clj-diff/1.4.78/clj-diff-1.4.78.jar&quot; {:lib-name lambdaisland/clj-diff}, &quot;/Users/thijscreemers/work/tcbv/boundary-starter/test&quot; {:path-key :extra-paths}, &quot;/Users/thijscreemers/.m2/repository/org/tcrawley/dynapath/1.1.0/dynapath-1.1.0.jar&quot; {:lib-name org.tcrawley/dynapath}, &quot;/Users/thijscreemers/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-smile/2.9.6/jackson-dataformat-smile-2.9.6.jar&quot; {:lib-name com.fasterxml.jackson.dataformat/jackson-dataformat-smile}, &quot;/Users/thijscreemers/.m2/repository/lambdaisland/tools.namespace/0.3.256/tools.namespace-0.3.256.jar&quot; {:lib-name lambdaisland/tools.namespace}, &quot;/Users/thijscreemers/work/tcbv/boundary-starter/src&quot; {:path-key :paths}, &quot;/Users/thijscreemers/.m2/repository/net/incongru/watchservice/barbary-watchservice/1.0/barbary-watchservice-1.0.jar&quot; {:lib-name net.incongru.watchservice/barbary-watchservice}, &quot;/Users/thijscreemers/.m2/repository/slingshot/slingshot/0.12.2/slingshot-0.12.2.jar&quot; {:lib-name slingshot/slingshot}, &quot;/Users/thijscreemers/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar&quot; {:lib-name commons-codec/commons-codec}, &quot;/Users/thijscreemers/.m2/repository/io/methvin/directory-watcher/0.17.3/directory-watcher-0.17.3.jar&quot; {:lib-name io.methvin/directory-watcher}, &quot;/Users/thijscreemers/.m2/repository/progrock/progrock/0.1.2/progrock-0.1.2.jar&quot; {:lib-name progrock/progrock}, &quot;/Users/thijscreemers/.m2/repository/cheshire/cheshire/5.8.1/cheshire-5.8.1.jar&quot; {:lib-name cheshire/cheshire}, &quot;/Users/thijscreemers/.m2/repository/aero/aero/1.1.6/aero-1.1.6.jar&quot; {:lib-name aero/aero}, &quot;/Users/thijscreemers/.m2/repository/expound/expound/0.9.0/expound-0.9.0.jar&quot; {:lib-name expound/expound}, &quot;/Users/thijscreemers/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar&quot; {:lib-name org.slf4j/slf4j-api}, &quot;/Users/thijscreemers/.m2/repository/mvxcvi/arrangement/2.1.0/arrangement-2.1.0.jar&quot; {:lib-name mvxcvi/arrangement}, &quot;/Users/thijscreemers/.m2/repository/fipp/fipp/0.6.26/fipp-0.6.26.jar&quot; {:lib-name fipp/fipp}}, :basis-config {:project &quot;/private/var/folders/cw/hbtpmsm15psbds5w1x0zdmc40000gn/T/deps1edn&quot;, :user &quot;/private/var/folders/cw/hbtpmsm15psbds5w1x0zdmc40000gn/T/depsedn&quot;, :extra nil, :args nil, :aliases [:test]}, :all-aliases #{:repl-clj :migrate :build :test :deps}, :mvn/repos {&quot;central&quot; {:url &quot;https://repo1.maven.org/maven2/&quot;}, &quot;clojars&quot; {:url &quot;https://repo.clojars.org/&quot;}}, :argmap {:extra-paths [&quot;/Users/thijscreemers/work/tcbv/boundary-starter/test&quot;], :extra-deps {lambdaisland/kaocha {:mvn/version &quot;1.87.1366&quot;}, com.h2database/h2 {:mvn/version &quot;2.2.224&quot;}, ring/ring-mock {:mvn/version &quot;0.4.0&quot;}}, :main-opts [&quot;-m&quot; &quot;kaocha.runner&quot;]}, :paths [&quot;/Users/thijscreemers/work/tcbv/boundary-starter/src&quot; &quot;/Users/thijscreemers/work/tcbv/boundary-starter/resources&quot;], :classpath-roots [&quot;/Users/thijscreemers/work/tcbv/boundary-starter/test&quot; &quot;/Users/thijscreemers/work/tcbv/boundary-starter/src&quot; &quot;/Users/thijscreemers/work/tcbv/boundary-starter/resources&quot; &quot;/Users/thijscreemers/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar&quot; &quot;/Users/thijscreemers/.m2/repository/lambdaisland/kaocha/1.87.1366/kaocha-1.87.1366.jar&quot; &quot;/Users/thijscreemers/.m2/repository/org/clojure/clojure/1.12.3/clojure-1.12.3.jar&quot; &quot;/Users/thijscreemers/.m2/repository/ring/ring-mock/0.4.0/ring-mock-0.4.0.jar&quot; &quot;/Users/thijscreemers/.m2/repository/aero/aero/1.1.6/aero-1.1.6.jar&quot; &quot;/Users/thijscreemers/.m2/repository/com/nextjournal/beholder/1.0.2/beholder-1.0.2.jar&quot; &quot;/Users/thijscreemers/.m2/repository/expound/expound/0.9.0/expound-0.9.0.jar&quot; &quot;/Users/thijscreemers/.m2/repository/hawk/hawk/0.2.11/hawk-0.2.11.jar&quot; &quot;/Users/thijscreemers/.m2/repository/lambdaisland/deep-diff2/2.10.211/deep-diff2-2.10.211.jar&quot; &quot;/Users/thijscreemers/.m2/repository/lambdaisland/tools.namespace/0.3.256/tools.namespace-0.3.256.jar&quot; &quot;/Users/thijscreemers/.m2/repository/meta-merge/meta-merge/1.0.0/meta-merge-1.0.0.jar&quot; &quot;/Users/thijscreemers/.m2/repository/org/clojure/tools.cli/1.0.219/tools.cli-1.0.219.jar&quot; &quot;/Users/thijscreemers/.m2/repository/org/tcrawley/dynapath/1.1.0/dynapath-1.1.0.jar&quot; &quot;/Users/thijscreemers/.m2/repository/progrock/progrock/0.1.2/progrock-0.1.2.jar&quot; &quot;/Users/thijscreemers/.m2/repository/slingshot/slingshot/0.12.2/slingshot-0.12.2.jar&quot; &quot;/Users/thijscreemers/.m2/repository/org/clojure/core.specs.alpha/0.4.74/core.specs.alpha-0.4.74.jar&quot; &quot;/Users/thijscreemers/.m2/repository/org/clojure/spec.alpha/0.5.238/spec.alpha-0.5.238.jar&quot; &quot;/Users/thijscreemers/.m2/repository/cheshire/cheshire/5.8.1/cheshire-5.8.1.jar&quot; &quot;/Users/thijscreemers/.m2/repository/ring/ring-codec/1.1.1/ring-codec-1.1.1.jar&quot; &quot;/Users/thijscreemers/.m2/repository/io/methvin/directory-watcher/0.17.3/directory-watcher-0.17.3.jar&quot; &quot;/Users/thijscreemers/.m2/repository/net/incongru/watchservice/barbary-watchservice/1.0/barbary-watchservice-1.0.jar&quot; &quot;/Users/thijscreemers/.m2/repository/fipp/fipp/0.6.26/fipp-0.6.26.jar&quot; &quot;/Users/thijscreemers/.m2/repository/lambdaisland/clj-diff/1.4.78/clj-diff-1.4.78.jar&quot; &quot;/Users/thijscreemers/.m2/repository/mvxcvi/arrangement/2.1.0/arrangement-2.1.0.jar&quot; &quot;/Users/thijscreemers/.m2/repository/org/clojure/core.rrb-vector/0.1.2/core.rrb-vector-0.1.2.jar&quot; &quot;/Users/thijscreemers/.m2/repository/org/clojure/java.classpath/1.0.0/java.classpath-1.0.0.jar&quot; &quot;/Users/thijscreemers/.m2/repository/org/clojure/tools.reader/1.3.6/tools.reader-1.3.6.jar&quot; &quot;/Users/thijscreemers/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.6/jackson-core-2.9.6.jar&quot; &quot;/Users/thijscreemers/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.9.6/jackson-dataformat-cbor-2.9.6.jar&quot; &quot;/Users/thijscreemers/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-smile/2.9.6/jackson-dataformat-smile-2.9.6.jar&quot; &quot;/Users/thijscreemers/.m2/repository/tigris/tigris/0.1.1/tigris-0.1.1.jar&quot; &quot;/Users/thijscreemers/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar&quot; &quot;/Users/thijscreemers/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar&quot; &quot;/Users/thijscreemers/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar&quot;], :config-paths [&quot;/Users/thijscreemers/.deps.clj/1.12.3.1577/ClojureTools/deps.edn&quot; &quot;/Users/thijscreemers/.clojure/deps.edn&quot; &quot;/Users/thijscreemers/work/tcbv/boundary-starter/deps.edn&quot;], :alias-scopes {:system #{:test :deps}, :user #{}, :project #{:repl-clj :migrate :build :test}}, :git-deps #{}, :alias-types {:deps :tool, :test :main, :repl-clj :main, :migrate :main, :build :tool}, :libs {org.clojure/clojure {:mvn/version &quot;1.12.3&quot;, :deps/manifest :mvn, :parents #{[]}, :paths [&quot;/Users/thijscreemers/.m2/repository/org/clojure/clojure/1.12.3/clojure-1.12.3.jar&quot;]}, lambdaisland/deep-diff2 {:mvn/version &quot;2.10.211&quot;, :deps/manifest :mvn, :dependents [lambdaisland/kaocha], :parents #{[lambdaisland/kaocha]}, :paths [&quot;/Users/thijscreemers/.m2/repository/lambdaisland/deep-diff2/2.10.211/deep-diff2-2.10.211.jar&quot;]}, commons-codec/commons-codec {:mvn/version &quot;1.11&quot;, :deps/manifest :mvn, :dependents [ring/ring-codec], :parents #{[ring/ring-mock ring/ring-codec]}, :paths [&quot;/Users/thijscreemers/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar&quot;]}, org.clojure/core.specs.alpha {:mvn/version &quot;0.4.74&quot;, :deps/manifest :mvn, :dependents [org.clojure/clojure], :parents #{[org.clojure/clojure]}, :paths [&quot;/Users/thijscreemers/.m2/repository/org/clojure/core.specs.alpha/0.4.74/core.specs.alpha-0.4.74.jar&quot;]}, lambdaisland/kaocha {:mvn/version &quot;1.87.1366&quot;, :deps/manifest :mvn, :parents #{[]}, :paths [&quot;/Users/thijscreemers/.m2/repository/lambdaisland/kaocha/1.87.1366/kaocha-1.87.1366.jar&quot;]}, expound/expound {:mvn/version &quot;0.9.0&quot;, :deps/manifest :mvn, :dependents [lambdaisland/kaocha], :parents #{[lambdaisland/kaocha]}, :paths [&quot;/Users/thijscreemers/.m2/repository/expound/expound/0.9.0/expound-0.9.0.jar&quot;]}, org.clojure/spec.alpha {:mvn/version &quot;0.5.238&quot;, :deps/manifest :mvn, :dependents [org.clojure/clojure], :parents #{[org.clojure/clojure]}, :paths [&quot;/Users/thijscreemers/.m2/repository/org/clojure/spec.alpha/0.5.238/spec.alpha-0.5.238.jar&quot;]}, org.clojure/tools.cli {:mvn/version &quot;1.0.219&quot;, :deps/manifest :mvn, :dependents [lambdaisland/kaocha], :parents #{[lambdaisland/kaocha]}, :paths [&quot;/Users/thijscreemers/.m2/repository/org/clojure/tools.cli/1.0.219/tools.cli-1.0.219.jar&quot;]}, lambdaisland/clj-diff {:mvn/version &quot;1.4.78&quot;, :deps/manifest :mvn, :dependents [lambdaisland/deep-diff2], :parents #{[lambdaisland/kaocha lambdaisland/deep-diff2]}, :paths [&quot;/Users/thijscreemers/.m2/repository/lambdaisland/clj-diff/1.4.78/clj-diff-1.4.78.jar&quot;]}, net.incongru.watchservice/barbary-watchservice {:mvn/version &quot;1.0&quot;, :deps/manifest :mvn, :dependents [hawk/hawk], :parents #{[lambdaisland/kaocha hawk/hawk]}, :paths [&quot;/Users/thijscreemers/.m2/repository/net/incongru/watchservice/barbary-watchservice/1.0/barbary-watchservice-1.0.jar&quot;]}, com.fasterxml.jackson.dataformat/jackson-dataformat-cbor {:mvn/version &quot;2.9.6&quot;, :deps/manifest :mvn, :dependents [cheshire/cheshire], :parents #{[ring/ring-mock cheshire/cheshire]}, :paths [&quot;/Users/thijscreemers/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.9.6/jackson-dataformat-cbor-2.9.6.jar&quot;]}, com.h2database/h2 {:mvn/version &quot;2.2.224&quot;, :deps/manifest :mvn, :parents #{[]}, :paths [&quot;/Users/thijscreemers/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar&quot;]}, slingshot/slingshot {:mvn/version &quot;0.12.2&quot;, :deps/manifest :mvn, :dependents [lambdaisland/kaocha], :parents #{[lambdaisland/kaocha]}, :paths [&quot;/Users/thijscreemers/.m2/repository/slingshot/slingshot/0.12.2/slingshot-0.12.2.jar&quot;]}, fipp/fipp {:mvn/version &quot;0.6.26&quot;, :deps/manifest :mvn, :dependents [lambdaisland/deep-diff2], :parents #{[lambdaisland/kaocha lambdaisland/deep-diff2]}, :paths [&quot;/Users/thijscreemers/.m2/repository/fipp/fipp/0.6.26/fipp-0.6.26.jar&quot;]}, com.nextjournal/beholder {:mvn/version &quot;1.0.2&quot;, :deps/manifest :mvn, :dependents [lambdaisland/kaocha], :parents #{[lambdaisland/kaocha]}, :paths [&quot;/Users/thijscreemers/.m2/repository/com/nextjournal/beholder/1.0.2/beholder-1.0.2.jar&quot;]}, com.fasterxml.jackson.core/jackson-core {:mvn/version &quot;2.9.6&quot;, :deps/manifest :mvn, :dependents [com.fasterxml.jackson.dataformat/jackson-dataformat-cbor cheshire/cheshire com.fasterxml.jackson.dataformat/jackson-dataformat-smile], :parents #{[ring/ring-mock cheshire/cheshire com.fasterxml.jackson.dataformat/jackson-dataformat-cbor] [ring/ring-mock cheshire/cheshire] [ring/ring-mock cheshire/cheshire com.fasterxml.jackson.dataformat/jackson-dataformat-smile]}, :paths [&quot;/Users/thijscreemers/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.6/jackson-core-2.9.6.jar&quot;]}, aero/aero {:mvn/version &quot;1.1.6&quot;, :deps/manifest :mvn, :dependents [lambdaisland/kaocha], :parents #{[lambdaisland/kaocha]}, :paths [&quot;/Users/thijscreemers/.m2/repository/aero/aero/1.1.6/aero-1.1.6.jar&quot;]}, lambdaisland/tools.namespace {:mvn/version &quot;0.3.256&quot;, :deps/manifest :mvn, :dependents [lambdaisland/kaocha], :parents #{[lambdaisland/kaocha]}, :paths [&quot;/Users/thijscreemers/.m2/repository/lambdaisland/tools.namespace/0.3.256/tools.namespace-0.3.256.jar&quot;]}, mvxcvi/arrangement {:mvn/version &quot;2.1.0&quot;, :deps/manifest :mvn, :dependents [lambdaisland/deep-diff2], :parents #{[lambdaisland/kaocha lambdaisland/deep-diff2]}, :paths [&quot;/Users/thijscreemers/.m2/repository/mvxcvi/arrangement/2.1.0/arrangement-2.1.0.jar&quot;]}, io.methvin/directory-watcher {:mvn/version &quot;0.17.3&quot;, :deps/manifest :mvn, :dependents [com.nextjournal/beholder], :parents #{[lambdaisland/kaocha com.nextjournal/beholder]}, :paths [&quot;/Users/thijscreemers/.m2/repository/io/methvin/directory-watcher/0.17.3/directory-watcher-0.17.3.jar&quot;]}, progrock/progrock {:mvn/version &quot;0.1.2&quot;, :deps/manifest :mvn, :dependents [lambdaisland/kaocha], :parents #{[lambdaisland/kaocha]}, :paths [&quot;/Users/thijscreemers/.m2/repository/progrock/progrock/0.1.2/progrock-0.1.2.jar&quot;]}, org.clojure/java.classpath {:mvn/version &quot;1.0.0&quot;, :deps/manifest :mvn, :dependents [lambdaisland/tools.namespace], :parents #{[lambdaisland/kaocha lambdaisland/tools.namespace]}, :paths [&quot;/Users/thijscreemers/.m2/repository/org/clojure/java.classpath/1.0.0/java.classpath-1.0.0.jar&quot;]}, ring/ring-codec {:mvn/version &quot;1.1.1&quot;, :deps/manifest :mvn, :dependents [ring/ring-mock], :parents #{[ring/ring-mock]}, :paths [&quot;/Users/thijscreemers/.m2/repository/ring/ring-codec/1.1.1/ring-codec-1.1.1.jar&quot;]}, org.clojure/core.rrb-vector {:mvn/version &quot;0.1.2&quot;, :deps/manifest :mvn, :dependents [lambdaisland/deep-diff2 fipp/fipp], :parents #{[lambdaisland/kaocha lambdaisland/deep-diff2] [lambdaisland/kaocha lambdaisland/deep-diff2 fipp/fipp]}, :paths [&quot;/Users/thijscreemers/.m2/repository/org/clojure/core.rrb-vector/0.1.2/core.rrb-vector-0.1.2.jar&quot;]}, net.java.dev.jna/jna {:mvn/version &quot;5.12.1&quot;, :deps/manifest :mvn, :dependents [io.methvin/directory-watcher], :parents #{[lambdaisland/kaocha com.nextjournal/beholder io.methvin/directory-watcher]}, :paths [&quot;/Users/thijscreemers/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar&quot;]}, cheshire/cheshire {:mvn/version &quot;5.8.1&quot;, :deps/manifest :mvn, :dependents [ring/ring-mock], :parents #{[ring/ring-mock]}, :paths [&quot;/Users/thijscreemers/.m2/repository/cheshire/cheshire/5.8.1/cheshire-5.8.1.jar&quot;]}, tigris/tigris {:mvn/version &quot;0.1.1&quot;, :deps/manifest :mvn, :dependents [cheshire/cheshire], :parents #{[ring/ring-mock cheshire/cheshire]}, :paths [&quot;/Users/thijscreemers/.m2/repository/tigris/tigris/0.1.1/tigris-0.1.1.jar&quot;]}, org.clojure/tools.reader {:mvn/version &quot;1.3.6&quot;, :deps/manifest :mvn, :dependents [lambdaisland/tools.namespace], :parents #{[lambdaisland/kaocha lambdaisland/tools.namespace]}, :paths [&quot;/Users/thijscreemers/.m2/repository/org/clojure/tools.reader/1.3.6/tools.reader-1.3.6.jar&quot;]}, org.tcrawley/dynapath {:mvn/version &quot;1.1.0&quot;, :deps/manifest :mvn, :dependents [lambdaisland/kaocha], :parents #{[lambdaisland/kaocha]}, :paths [&quot;/Users/thijscreemers/.m2/repository/org/tcrawley/dynapath/1.1.0/dynapath-1.1.0.jar&quot;]}, org.slf4j/slf4j-api {:mvn/version &quot;1.7.36&quot;, :deps/manifest :mvn, :dependents [io.methvin/directory-watcher], :parents #{[lambdaisland/kaocha com.nextjournal/beholder io.methvin/directory-watcher]}, :paths [&quot;/Users/thijscreemers/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar&quot;]}, hawk/hawk {:mvn/version &quot;0.2.11&quot;, :deps/manifest :mvn, :dependents [lambdaisland/kaocha], :parents #{[lambdaisland/kaocha]}, :paths [&quot;/Users/thijscreemers/.m2/repository/hawk/hawk/0.2.11/hawk-0.2.11.jar&quot;]}, ring/ring-mock {:mvn/version &quot;0.4.0&quot;, :deps/manifest :mvn, :parents #{[]}, :paths [&quot;/Users/thijscreemers/.m2/repository/ring/ring-mock/0.4.0/ring-mock-0.4.0.jar&quot;]}, meta-merge/meta-merge {:mvn/version &quot;1.0.0&quot;, :deps/manifest :mvn, :dependents [lambdaisland/kaocha], :parents #{[lambdaisland/kaocha]}, :paths [&quot;/Users/thijscreemers/.m2/repository/meta-merge/meta-merge/1.0.0/meta-merge-1.0.0.jar&quot;]}, com.fasterxml.jackson.dataformat/jackson-dataformat-smile {:mvn/version &quot;2.9.6&quot;, :deps/manifest :mvn, :dependents [cheshire/cheshire], :parents #{[ring/ring-mock cheshire/cheshire]}, :paths [&quot;/Users/thijscreemers/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-smile/2.9.6/jackson-dataformat-smile-2.9.6.jar&quot;]}}, :aliases {:deps {:replace-paths [], :replace-deps {org.clojure/tools.deps.cli {:mvn/version &quot;0.13.115&quot;}}, :ns-default clojure.tools.deps.cli.api, :ns-aliases {help clojure.tools.deps.cli.help}}, :test {:extra-paths [&quot;/Users/thijscreemers/work/tcbv/boundary-starter/test&quot;], :extra-deps {lambdaisland/kaocha {:mvn/version &quot;1.87.1366&quot;}, com.h2database/h2 {:mvn/version &quot;2.2.224&quot;}, ring/ring-mock {:mvn/version &quot;0.4.0&quot;}}, :main-opts [&quot;-m&quot; &quot;kaocha.runner&quot;]}, :repl-clj {:extra-deps {org.clojure/clojure {:mvn/version &quot;1.11.1&quot;}, integrant/repl {:mvn/version &quot;0.3.3&quot;}, ring/ring-jetty-adapter {:mvn/version &quot;1.12.2&quot;}, aero/aero {:mvn/version &quot;1.1.6&quot;}, integrant/integrant {:mvn/version &quot;0.8.1&quot;}, hiccup/hiccup {:mvn/version &quot;2.0.0-alpha2&quot;}, seancorfield/next.jdbc {:mvn/version &quot;1.3.894&quot;}, metosin/malli {:mvn/version &quot;0.13.0&quot;}, nrepl/nrepl {:mvn/version &quot;1.0.0&quot;}, org.xerial/sqlite-jdbc {:mvn/version &quot;3.45.1.0&quot;}, metosin/reitit {:mvn/version &quot;0.7.0&quot;}, ring/ring-core {:mvn/version &quot;1.12.2&quot;}}, :main-opts [&quot;-m&quot; &quot;nrepl.cmdline&quot;]}, :migrate {:extra-deps {migratus/migratus {:mvn/version &quot;1.5.9&quot;}}, :main-opts [&quot;-m&quot; &quot;migratus.core&quot; &quot;migrate&quot;]}, :build {:deps {io.github.clojure/tools.build {:mvn/version &quot;0.9.6&quot;}}, :ns-default build}}, :deps {org.clojure/clojure {:mvn/version &quot;1.12.3&quot;}}}}" />
+              <option name="hash" value="76e34556e47a09540ce125045b0ee8e2" />
+            </ModuleDetails>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3BF5n9Ib2WyR7eqkpadkgAF6Pso" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "feat/clean-docs",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/thijscreemers/work/tcbv/boundary-starter",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="bbPath" value="" />
+      <setting name="parameters" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <setting name="workingDir" value="" />
+      <setting name="focusEditor" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="REPL for boundary-starter" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <option name="configVersion" value="1" />
+      <option name="displayName" value="REPL for boundary-starter" />
+      <option name="execution" value="DEPS" />
+      <module name="boundary-starter" />
+      <option name="options" value="-A:test" />
+      <option name="profiles" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="replPortFileType" value="STANDARD" />
+      <setting name="customPortFile" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <setting name="useHeartbeat" value="true" />
+      <setting name="focusEditor" value="false" />
+      <setting name="urlFile" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70aadfd0-945d-4bd0-8a10-f83af9322903" name="Changes" comment="" />
+      <created>1774072144871</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1774072144871</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
