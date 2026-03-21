@@ -1,0 +1,53 @@
+# Build artifacts
+target/
+*.jar
+*.class
+test/reports
+
+# Clojure cache
+.cpcache/
+.nrepl-port
+.clj-kondo/*
+!.clj-kondo/config.edn
+**/.clj-kondo/
+.lsp
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+test/reports/
+
+# Database
+db/
+*.db
+*.db-journal
+
+# Environment
+.env
+.env.local
+.mcp.json
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Hugo (docs-site)
+docs-site/public/
+docs-site/resources/_gen/
+docs-site/.hugo_build.lock
+
+existing-dir/
+.worktrees
