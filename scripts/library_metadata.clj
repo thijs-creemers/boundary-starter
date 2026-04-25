@@ -195,7 +195,40 @@
     :depends-on [:core :observability :platform]
     :git-path "libs/geo"
     :config-sections [:geo]
-    :config-template {:geo {:enabled true}}}})
+    :config-template {:geo {:enabled true}}}
+
+   :ai
+   {:id :ai
+    :name "boundary-ai"
+    :description "AI/LLM integration: Ollama, Anthropic, OpenAI with fallback support"
+    :category :feature
+    :required false
+    :depends-on [:core :observability :platform]
+    :git-path "libs/ai"
+    :config-sections [:ai]
+    :config-template {:ai {:enabled true :provider :ollama :model "qwen2.5-coder:7b" :base-url "http://localhost:11434"}}}
+
+   :payments
+   {:id :payments
+    :name "boundary-payments"
+    :description "Payment processing: Stripe, Mollie, and mock provider"
+    :category :feature
+    :required false
+    :depends-on [:core :observability :platform]
+    :git-path "libs/payments"
+    :config-sections [:payments]
+    :config-template {:payments {:enabled true :provider :mock}}}
+
+   :i18n
+   {:id :i18n
+    :name "boundary-i18n"
+    :description "Internationalization: multi-locale support with translation catalogues"
+    :category :feature
+    :required false
+    :depends-on [:core :observability :platform]
+    :git-path "libs/i18n"
+    :config-sections [:i18n]
+    :config-template {:i18n {:enabled true :default-locale :en}}}})
 
 (defn get-all-libraries
   "Return all library definitions"
@@ -343,17 +376,17 @@
      "Library Summary:\n\n"
      "  Foundation (always included):\n"
      (str/join "\n"
-                          (map #(str "    - " (:name (get-library %))) (sort required)))
+               (map #(str "    - " (:name (get-library %))) (sort required)))
      "\n\n"
      (when (seq user-selected)
        (str "  Selected by you:\n"
             (str/join "\n"
-                                 (map #(str "    - " (:name (get-library %))) (sort user-selected)))
+                      (map #(str "    - " (:name (get-library %))) (sort user-selected)))
             "\n\n"))
      (when (seq auto-added)
        (str "  Auto-added (dependencies):\n"
             (str/join "\n"
-                                 (map #(str "    - " (:name (get-library %))) (sort auto-added)))
+                      (map #(str "    - " (:name (get-library %))) (sort auto-added)))
             "\n\n"))
      "  Total: " (count resolved-libs) " libraries\n")))
 
