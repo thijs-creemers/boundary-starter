@@ -441,7 +441,7 @@
         ;; Custom template path
         custom-libs (when (= template-id :custom)
                       ;; Offer to load saved template or create new
-                      (let [saved (helpers/list-saved-templates)]
+                      (loop [saved (helpers/list-saved-templates)]
                         (if (seq saved)
                           (do
                             (println)
@@ -484,10 +484,10 @@
                                             result (select-libraries-interactive)]
                                         (helpers/edit-saved-template tpl-name (:resolved result))
                                         (println (green (str "✓ Updated '" tpl-name "'")))
-                                        (recur))
+                                        (recur (helpers/list-saved-templates)))
                                       (do
                                         (println (red "  Invalid choice"))
-                                        (recur)))))
+                                        (recur (helpers/list-saved-templates))))))
 
                                  ;; Duplicate template
                                 (= choice (+ (count saved) 3))
@@ -505,19 +505,21 @@
                                         (loop []
                                           (let [new-name (prompt "New template name (kebab-case)" nil)]
                                             (if (valid-project-name? new-name)
-                                              (try
-                                                (helpers/duplicate-saved-template source-name new-name)
-                                                (println (green (str "✓ Created '" new-name "' from '" source-name "'")))
-                                                (recur)
-                                                (catch Exception e
-                                                  (println (red (str "  Error: " (.getMessage e))))
+                                              (let [err (try
+                                                          (helpers/duplicate-saved-template source-name new-name)
+                                                          (println (green (str "✓ Created '" new-name "' from '" source-name "'")))
+                                                          nil
+                                                          (catch Exception e e))]
+                                                (when err
+                                                  (println (red (str "  Error: " (.getMessage err))))
                                                   (recur)))
                                               (do
                                                 (println (red "  Must be kebab-case (e.g., my-template)"))
-                                                (recur))))))
+                                                (recur)))))
+                                        (recur (helpers/list-saved-templates)))
                                       (do
                                         (println (red "  Invalid choice"))
-                                        (recur)))))
+                                        (recur (helpers/list-saved-templates))))))
 
                                  ;; Rename template
                                 (= choice (+ (count saved) 4))
@@ -535,19 +537,21 @@
                                         (loop []
                                           (let [new-name (prompt "New template name (kebab-case)" nil)]
                                             (if (valid-project-name? new-name)
-                                              (try
-                                                (helpers/rename-saved-template old-name new-name)
-                                                (println (green (str "✓ Renamed '" old-name "' to '" new-name "'")))
-                                                (recur)
-                                                (catch Exception e
-                                                  (println (red (str "  Error: " (.getMessage e))))
+                                              (let [err (try
+                                                          (helpers/rename-saved-template old-name new-name)
+                                                          (println (green (str "✓ Renamed '" old-name "' to '" new-name "'")))
+                                                          nil
+                                                          (catch Exception e e))]
+                                                (when err
+                                                  (println (red (str "  Error: " (.getMessage err))))
                                                   (recur)))
                                               (do
                                                 (println (red "  Must be kebab-case (e.g., my-template)"))
-                                                (recur))))))
+                                                (recur)))))
+                                        (recur (helpers/list-saved-templates)))
                                       (do
                                         (println (red "  Invalid choice"))
-                                        (recur)))))
+                                        (recur (helpers/list-saved-templates))))))
 
                                  ;; Delete template
                                 (= choice (+ (count saved) 5))
@@ -567,11 +571,11 @@
                                           (do
                                             (helpers/delete-saved-template tpl-name)
                                             (println (green (str "✓ Deleted '" tpl-name "'")))
-                                            (recur))
-                                          (recur)))
+                                            (recur (helpers/list-saved-templates)))
+                                          (recur (helpers/list-saved-templates))))
                                       (do
                                         (println (red "  Invalid choice"))
-                                        (recur)))))
+                                        (recur (helpers/list-saved-templates))))))
 
                                 ;; Create new template
                                 (= choice (inc (count saved)))
@@ -602,7 +606,7 @@
                                 :else
                                 (do
                                   (println (red "  Invalid choice"))
-                                  (recur)))))
+                                  (recur (helpers/list-saved-templates))))))
                           ;; No saved templates, create new
                           (let [result (select-libraries-interactive)
                                 _ (println)

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO_OWNER="tcbv"
+REPO_OWNER="thijs-creemers"
 REPO_NAME="boundary-starter"
 REF="${BOUNDARY_STARTER_REF:-main}"
 TARGET_DIR="${1:-boundary-starter}"
