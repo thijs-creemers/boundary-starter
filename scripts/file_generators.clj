@@ -387,15 +387,101 @@ java -jar target/" project-name "-*.jar
     {:file (.getPath output-file)
      :size (.length output-file)}))
 
-(def bb-edn-content
-  "{:tasks
- {scaffold
-  {:doc \"Interactive module scaffolding wizard (bb scaffold [generate|new|field|endpoint|adapter|ai]\"
-   :task (apply shell \"bb scripts/scaffold.clj\" *command-line-args*)}
+(def boundary-tools-version "1.0.1-alpha-13")
 
-  gen-agents
-  {:doc \"Regenerate AGENTS.md from deps.edn (bb gen-agents [--dry-run])\"
-   :task (apply shell \"bb scripts/gen_agents.clj\" *command-line-args*)}}}")
+(def bb-edn-content
+  (str ";; bb.edn — Babashka task runner for this Boundary project\n"
+       ";; All tasks are provided by boundary-tools; no local scripts needed.\n"
+       "{:deps {org.boundary-app/boundary-tools {:mvn/version \"" boundary-tools-version "\"}}\n"
+       "\n"
+       " :tasks\n"
+       " {:requires ([boundary.tools.scaffold    :as scaffold]\n"
+       "             [boundary.tools.ai          :as ai]\n"
+       "             [boundary.tools.deps        :as deps]\n"
+       "             [boundary.tools.i18n        :as i18n]\n"
+       "             [boundary.tools.admin       :as admin]\n"
+       "             [boundary.tools.deploy      :as deploy]\n"
+       "             [boundary.tools.dev         :as dev]\n"
+       "             [boundary.tools.setup       :as setup]\n"
+       "             [boundary.tools.doctor      :as doctor]\n"
+       "             [boundary.tools.doctor-env  :as doctor-env]\n"
+       "             [boundary.tools.check       :as check]\n"
+       "             [boundary.tools.check-fcis  :as check-fcis]\n"
+       "             [boundary.tools.check-tests :as check-tests]\n"
+       "             [boundary.tools.check-deps  :as check-deps]\n"
+       "             [boundary.tools.db          :as db]\n"
+       "             [boundary.tools.quickstart  :as quickstart]\n"
+       "             [boundary.tools.help        :as help]\n"
+       "             [boundary.tools.integrate   :as integrate])\n"
+       "\n"
+       "  scaffold          {:doc \"Interactive module scaffolding wizard\"\n"
+       "                     :task (apply scaffold/-main *command-line-args*)}\n"
+       "  scaffold:ai       {:doc \"NL scaffolding via AI (--yes for non-interactive)\"\n"
+       "                     :task (apply scaffold/-main \"ai\" *command-line-args*)}\n"
+       "  scaffold:integrate {:doc \"Wire a scaffolded module into deps.edn, tests.edn, wiring.clj\"\n"
+       "                      :task (apply integrate/-main *command-line-args*)}\n"
+       "\n"
+       "  setup             {:doc \"Interactive config setup wizard (bb setup [ai <description>])\"\n"
+       "                     :task (apply setup/-main *command-line-args*)}\n"
+       "\n"
+       "  doctor            {:doc \"Validate config for common mistakes\"\n"
+       "                     :task (apply doctor/-main *command-line-args*)}\n"
+       "  doctor:env        {:doc \"Check development environment prerequisites\"\n"
+       "                     :task (apply doctor-env/-main *command-line-args*)}\n"
+       "\n"
+       "  check             {:doc \"Run all quality checks (FC/IS, deps, placeholder-tests, kondo, doctor)\"\n"
+       "                     :task (apply check/-main *command-line-args*)}\n"
+       "  check:fcis        {:doc \"FC/IS boundary enforcement\"\n"
+       "                     :task (check-fcis/-main)}\n"
+       "  check:placeholder-tests {:doc \"Detect placeholder (is true) assertions in test files\"\n"
+       "                            :task (check-tests/-main)}\n"
+       "  check:deps        {:doc \"Verify library dependency direction and detect cycles\"\n"
+       "                     :task (check-deps/-main)}\n"
+       "\n"
+       "  migrate           {:doc \"Run database migrations (bb migrate [up|status|rollback|create ...])\"\n"
+       "                     :task (apply dev/migrate *command-line-args*)}\n"
+       "  db:status         {:doc \"Show database configuration and migration status\"\n"
+       "                     :task (db/-main \"status\")}\n"
+       "  db:reset          {:doc \"Drop and recreate the database with all migrations\"\n"
+       "                     :task (db/-main \"reset\")}\n"
+       "  db:seed           {:doc \"Seed database from resources/seeds/dev.edn\"\n"
+       "                     :task (db/-main \"seed\")}\n"
+       "\n"
+       "  quickstart        {:doc \"Zero-to-running-app setup: check env, configure, scaffold, migrate, start\"\n"
+       "                     :task (apply quickstart/-main *command-line-args*)}\n"
+       "  guide             {:doc \"Contextual help and guidance\"\n"
+       "                     :task (apply help/-main *command-line-args*)}\n"
+       "\n"
+       "  ai                {:doc \"Framework-aware AI tooling (explain|gen-tests|sql|docs|admin-entity)\"\n"
+       "                     :task (apply ai/-main *command-line-args*)}\n"
+       "\n"
+       "  create-admin      {:doc \"Create the first admin user (interactive wizard)\"\n"
+       "                     :task (apply admin/-main *command-line-args*)}\n"
+       "\n"
+       "  upgrade-outdated  {:doc \"Check and optionally upgrade outdated Maven deps\"\n"
+       "                     :task (apply deps/-main *command-line-args*)}\n"
+       "\n"
+       "  deploy            {:doc \"Deploy libraries to Clojars\"\n"
+       "                     :task (apply deploy/-main *command-line-args*)}\n"
+       "\n"
+       "  check-links       {:doc \"Validate local markdown links in AGENTS documentation\"\n"
+       "                     :task (dev/check-links)}\n"
+       "  smoke-check       {:doc \"Verify deps.edn aliases and key tool entrypoints\"\n"
+       "                     :task (dev/smoke-check)}\n"
+       "  install-hooks     {:doc \"Configure git hooks path to .githooks\"\n"
+       "                     :task (dev/install-hooks)}\n"
+       "\n"
+       "  i18n:find         {:doc \"Find a translation key by substring or exact keyword\"\n"
+       "                     :task (apply i18n/-main \"find\" *command-line-args*)}\n"
+       "  i18n:scan         {:doc \"Scan core/ui.clj files for unexternalised string literals\"\n"
+       "                     :task (i18n/-main \"scan\")}\n"
+       "  i18n:missing      {:doc \"Report translation keys missing from locale files\"\n"
+       "                     :task (i18n/-main \"missing\")}\n"
+       "  i18n:unused       {:doc \"Report catalogue keys not referenced in source\"\n"
+       "                     :task (i18n/-main \"unused\")}\n"
+       "\n"
+       "  gen-agents        {:doc \"Regenerate AGENTS.md from deps.edn\"\n"
+       "                     :task (apply shell \"bb scripts/gen_agents.clj\" *command-line-args*)}}}\n"))
 
 (defn write-bb-edn!
   "Write bb.edn for the generated project."
@@ -698,8 +784,9 @@ java -jar target/" project-name "-*.jar
        (println)
        (println "Next steps:")
        (println (str "   cd " output-dir))
-       (println "   clojure -M:repl-clj")
-       (println "   (ig-repl/go)")
+       (println "   bb setup          # configure database, AI, payments")
+       (println "   bb migrate up     # run database migrations")
+       (println "   bb guide          # contextual help for what to do next")
 
        {:success true
         :project-name project-name
