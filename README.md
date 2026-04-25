@@ -66,7 +66,7 @@ Saved templates live in `saved-templates/` (gitignored) and can be reused, edite
 ```
 {project-name}/
 ├── deps.edn                        ← Boundary libs as git deps
-├── bb.edn                          ← bb scaffold / bb gen-agents
+├── bb.edn                          ← full boundary-tools suite (scaffold, migrate, doctor, …)
 ├── build.clj
 ├── AGENTS.md                       ← Project-local dev guide
 ├── scripts/gen_agents.clj
@@ -82,12 +82,12 @@ Saved templates live in `saved-templates/` (gitignored) and can be reused, edite
 
 ```bash
 cd my-project
-export JWT_SECRET="dev-secret-minimum-32-characters"   # required for auth templates
-clojure -M:repl-clj
-# (require '[integrant.repl :as ig-repl])
-# (ig-repl/go)
-# → http://localhost:3000
+bb setup          # configure database, AI provider, payments
+bb migrate up     # run database migrations
+bb guide          # contextual help for what to do next
 ```
+
+All `bb` tasks (scaffold, doctor, check, db:*, i18n:*, ai, …) are available immediately via `boundary-tools` — no additional setup needed.
 
 ## Troubleshooting
 
