@@ -387,7 +387,7 @@ java -jar target/" project-name "-*.jar
     {:file (.getPath output-file)
      :size (.length output-file)}))
 
-(def boundary-tools-version "1.0.1-alpha-13")
+(def boundary-tools-version "1.0.1-alpha-14")
 
 (def bb-edn-content
   (str ";; bb.edn — Babashka task runner for this Boundary project\n"
