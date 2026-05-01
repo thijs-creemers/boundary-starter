@@ -1,5 +1,7 @@
 # Boundary Starter
 
+# This project is *DEPRECATED* and no longer needed from boundary 1.0.1-alpha-15 and up.
+
 A project scaffolding wizard for new [Boundary](https://github.com/tcbv/boundary) projects.
 
 ## Prerequisites
